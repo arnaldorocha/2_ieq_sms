@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+        .container {
+            margin: 40px auto;
+            max-width: 900px;
+        }
+
+
+        h2 {
+            font-family: "Rubik Dirt", serif; /* Fonte estilosa */
+   
+            font-size: 1.8rem; /* Tamanho maior */
+            font-weight: 500; /* Peso pesado para o título */
+            letter-spacing: 2px; /* Aumenta o espaço entre as letras */
+            margin-bottom: 20px;
+            text-transform: uppercase; /* Deixa as letras maiúsculas */
+            text-align: center;
+        }

@@ -1,0 +1,107 @@
+/* Centraliza as imagens na galeria */
+.album-preview {
+    display: flex;
+    justify-content: flex-start; /* Alinha as imagens à esquerda */
+    gap: 20px; /* Espaço entre as imagens */
+    margin-top: 30px;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    white-space: nowrap; /* Mantém as imagens em linha */
+    scroll-snap-type: x mandatory; /* Garante rolagem suave */
+}
+
+/* Ajuste nas imagens da galeria */
+.album-preview img {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Efeito ao passar o mouse */
+    scroll-snap-align: start; /* Alinha cada imagem ao início */
+}
+
+/* Efeito de zoom nas imagens da galeria */
+.album-preview img:hover {
+    transform: scale(1.1);  /* Aumenta um pouco a imagem ao passar o mouse */
+}
+
+/* Fundo escuro translúcido para destacar o modal */
+.modal-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparência para destacar o conteúdo */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    z-index: 1050;
+    animation: fadeIn 0.3s ease-in-out; /* Animação ao abrir */
+}
+
+/* Modal body aprimorado */
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Ajuste nas imagens e vídeos */
+.modal-img, .modal-video {
+    max-width: 90vw;  /* Para manter a imagem dentro da tela */
+    max-height: 90vh;
+    object-fit: contain; /* Ajusta a imagem dentro da área sem distorcer */
+    border-radius: 10px; /* Bordas arredondadas para um visual mais moderno */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); /* Sombra sutil para destacar */
+    transition: transform 0.3s ease-in-out; /* Efeito suave ao abrir */
+}
+
+/* Botões de navegação */
+.modal-footer button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 100px; /* Bordas arredondadas */
+    transition: all 0.3s ease;
+    margin: 0 2px; /* Aumenta o espaço entre os botões */
+}
+
+.modal-footer button:hover {
+    background-color: #ff3333;
+    transform: scale(1.1); /* Efeito de leve zoom ao passar o mouse */
+}
+
+/* Botão de fechar personalizado */
+.modal-header .custom-close {
+    background-color: transparent;
+    color: white;
+}
+
+.modal-header .custom-close:hover {
+    transform: rotate(90deg); /* Pequena rotação para efeito interativo */
+    color: #ff4d4d;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Esconde o vídeo quando não estiver visível */
+#modalVideo.d-none {
+    display: none;
+}
+
+#modalVideo.d-block {
+    display: block;
+}

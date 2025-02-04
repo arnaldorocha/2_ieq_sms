@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+.header-bandeira h1 {
+    font-family: "Rubik Dirt", serif; /* Fonte estilosa */
+    font-size: 3rem; /* Tamanho maior */
+    font-weight: 300; /* Peso pesado para o título */
+    color: rgba(243, 243, 243, 0.651); /* Cor branca para destaque */
+    text-shadow: 2px 2px 5px rgba(0, 1, 2, 4); /* Sombra suave para dar destaque */
+    letter-spacing: 1px; /* Aumenta o espaço entre as letras */
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Deixa as letras maiúsculas */
+}
+
+h1 {
+    font-family: "Rubik Dirt", serif; /* Fonte estilosa */
+    font-size: 1.8rem; /* Tamanho maior */
+    font-weight: 500; /* Peso pesado para o título */
+    text-shadow: 2px 2px 5px rgba(0, 1, 2, 4); /* Sombra suave para dar destaque */
+    letter-spacing: 2px; /* Aumenta o espaço entre as letras */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Deixa as letras maiúsculas */
+    text-align: center;
+}
+
+body {
+    background-color: #1b1b1b; /* Cinza claro para o fundo */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-bandeira {
+    background-color: #1e1e1e; /* Cor escura para o cabeçalho */
+    color: white;
+    padding: 100px 0; /* Aumenta a altura do cabeçalho */
+    text-align: center;
+       background-image: url('https://th.bing.com/th/id/OIG3..b2tQp7k7wkGFseY0SXK?w=1024&h=1024&rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6); /* Deixar o fundo do header mais escuro */
+    height: 100vh; /* Define a altura do cabeçalho para a altura da tela */
+}
+
+.header-buttons .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(36, 32, 32, 0.979) ;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-buttons .btn:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.container.my-4 img {
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.container.my-4 img:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para a seção de Significados das Cores */
+
+.text-center h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.row.g-4 .col-md-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    min-height: 150px; /* Aumenta a altura mínima dos cartões */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.card h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.card.text-white.bg-purple {
+    background-color: purple;
+    color:  rgba(243, 243, 243, 0.651);
+}
+
+.card.text-white.bg-info {
+    background-color: #17a2b8;
+    color:  rgba(243, 243, 243, 0.651);
+}
+
+.card.text-dark.bg-warning {
+    background-color: #ffc107;
+    color:  rgba(243, 243, 243, 0.651);
+}
+
+.card.text-white.bg-danger {
+    background-color: #dc3545;
+    color:  rgba(243, 243, 243, 0.651);
+}
+
+/* Cor de fundo geral do body */
+body.bg-purple-body {
+    background-color: purple; 
+    color:  rgba(243, 243, 243, 0.651);
+}
+
+body.bg-info-body {
+    background-color: #17a2b8;
+    color:  rgba(243, 243, 243, 0.651);
+}
+
+body.bg-warning-body {
+    background-color: #ffc107;
+    color:  rgba(243, 243, 243, 0.651);
+}
+
+body.bg-danger-body {
+    background-color: #dc3545;
+    color:  rgba(243, 243, 243, 0.651);
+}
+
+        /* Remove o underline dos links */
+a {
+    text-decoration: none;
+  }
+
+/* Estilizar o footer */
+.footer {
+    background-color: #282828; /* Cor de fundo mais escura */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Alinhar texto à esquerda */
+.footer p {
+    margin: 0;
+    flex: 1;
+    font-size: 0.8rem;
+}
+
+/* Estilizar os ícones sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Ajuste o espaçamento entre os ícones */
+    margin-top: 10px;
+}
+
+/* Tamanho dos ícones */
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito hover nos ícones */
+.social-icons img:hover {
+    transform: scale(1.1);
+
+}
+
+.card-custom {
+    background-color: #6A0DAD;
+    color: #E6E6FA;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-custom .card-title {
+    color: #D8BFD8;
+    font-size: 2rem;
+}
+
+.card-custom .card-text {
+    color: #D8BFD8;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.card-custom .btn {
+    background-color: #E6E6FA;
+    color: #6A0DAD;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+
