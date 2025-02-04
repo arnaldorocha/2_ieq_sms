@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEQ STA. CRUZ</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/theme.css">
+   
+</head>
+<body>
+    
+    <header class="header-bandeira">
+        <h1>IEQ STA. CRUZ</h1>
+        <a href="{{ url_for('home') }}">
+            <img src="https://seeklogo.com/images/I/igreja-do-evangelho-quadrangular-2-logo-55FEE849BD-seeklogo.com.png" 
+                 alt="Logo da Igreja do Evangelho Quadrangular" 
+                 class="bandeira-img mb-4">
+        </a>       
+        
+        <!-- Botões no header -->
+        <div class="header-buttons">
+            <a href="/historia" class="btn btn-custom btn-purple" style="background-color: purple; color: white;">História</a>
+            <a href="/quem_somos" class="btn btn-custom btn-info">Quem Somos</a>
+            <a href="/lideres" class="btn btn-custom btn-warning">Líderes</a>
+            <a href="/albuns" class="btn btn-custom btn-danger">Álbuns</a>
+        </div>
+
+    </header>
+    
+    <div class="container">
+
+        <div class="row">
+               
+            <div class="col-md-12">
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                    <h1 class="card-title">Jesus Cura</h1><br>
+                    <h4 class="card-text"><em>Além da cura do corpo, Ele também cura a alma</em></h4>
+                    </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="card bg-primary text-white mb-3">
+                    <div cl ass="card-body">
+                        <h5 class="card-title">João 8:32</h5>
+                        <p class="card-text"><em>A cura está na Palavra de Deus.</em></p>
+                        <p class="card-text">"E conhecereis a verdade, e a verdade vos libertará."</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-12">
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mateus 10:1</h5>
+                        <p class="card-text"><em>Jesus deu aos seus apóstolos o poder de curar.</em></p>
+                        <p class="card-text">"Jesus, chamando seus doze discípulos, deu-lhes autoridade para expulsar espíritos imundos e curar todas as doenças e enfermidades."</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-12">
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Marcos 3:15</h5>
+                        <p class="card-text"><em>Jesus conferiu aos apóstolos o poder de curar.</em></p>
+                        <p class="card-text">"E para que tivessem autoridade para curar doenças e expulsar demônios."</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-12">
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucas 9:1-2</h5>
+                        <p class="card-text"><em>Jesus conferiu poder para curar e proclamar o Reino de Deus.</em></p>
+                        <p class="card-text">"Reunindo os doze, deu-lhes poder e autoridade para expulsar todos os demônios e curar doenças, e os enviou a pregar o Reino de Deus e a curar os enfermos."</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-12">
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Marcos 10:51-52</h5>
+                        <p class="card-text"><em>Jesus curou um cego com fé.</em></p>
+                        <p class="card-text">"Então Jesus lhe disse: ‘Vai, a tua fé te salvou.’ E imediatamente ele recuperou a visão e seguia Jesus pelo caminho."</p>
+                    </div>
+               </div>
+            </div>
+        </div>
+     </div>
+ </div>
+    
+
+    
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="text-footer">&copy; 2025 - IEQ STA. CRUZ. | Todos os direitos reservados. <br> Endereço: Rua Ewaldo Fischer da Silva, 32 - Jardim Santa Cruz - São Mateus do Sul</p>
+            
+            <!-- Redes sociais -->
+            <div class="social-icons">
+                <a href="mailto:pastorarnaldorocha@gmail.com" target="_blank" alt="Gmail">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Gmail" width="32" />
+                </a>
+                <a href="https://pt-br.facebook.com/ieqsaomateusdosul/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook" width="32" />
+                </a>
+                <a href="https://www.instagram.com/segundaieqsms/" target="_blank">
+                    <img src="https://cdn-icons-png.freepik.com/256/15707/15707869.png" alt="Instagram" width="32" />       
+                </a>
+                <a href="https://www.youtube.com/@pastorarnaldorocha" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/1024px-YouTube_icon_%282013-2017%29.png" alt="YouTube" width="32" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/script.js"></script>
+    
+</body>
+</html>

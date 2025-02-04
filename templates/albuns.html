@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IEQ STA. CRUZ</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/responsive.css">        
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header-bandeira text-center py-5">
+        <h1 class="title-font">IEQ STA. CRUZ</h1>
+        <a href="{{ url_for('home') }}">
+            <img src="https://seeklogo.com/images/I/igreja-do-evangelho-quadrangular-2-logo-55FEE849BD-seeklogo.com.png"
+                alt="Logo da Igreja do Evangelho Quadrangular" class="bandeira-img mb-4">
+                
+        </a>
+
+        <!-- Botões de navegação -->
+        <div class="header-buttons">
+            <a href="/historia" class="btn btn-custom btn-purple" style="background-color: purple; color: white;">História</a>
+            <a href="/quem_somos" class="btn btn-custom btn-info">Quem Somos</a>
+            <a href="/lideres" class="btn btn-custom btn-warning">Líderes</a>
+            <a href="/albuns" class="btn btn-custom btn-danger">Álbuns</a>
+        </div>
+        
+    </header>
+
+    <!-- Seção de prévia de álbuns -->
+    <div class="container album-preview">
+        <div class="album-card">
+            <img src="/static/images/gpkids/gpkids (2).png" alt="GPKids">
+            <h5>GPKids</h5>
+            <a href="{{ url_for('gpkids_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+        <div class="album-card">
+            <img src="/static/images/adolecentes/adolecentes (3).png" alt="Grupo de Adolescentes">
+            <h5>Grupo de Adolescentes</h5>
+            <a href="{{ url_for('adolecentes_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+        
+        <div class="album-card">
+            <img src="/static/images/jovens/jovens.png" alt="Grupo de Jovens">
+            <h5>Grupo de Jovens</h5>
+            <a href="{{ url_for('jovens_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+        <div class="album-card">
+            <img src="/static/images/mulheres/mulheres.png" alt="Grupo de Mulheres">
+            <h5>Grupo de Mulheres</h5>
+            <a href="{{ url_for('mulheres_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+        <div class="album-card">
+            <img src="/static/images/homens/homens.png" alt="Grupo de Homens">
+            <h5>Grupo de Homens</h5>
+            <a href="{{ url_for('homens_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+        
+        <div class="album-card">
+            <img src="/static/images/louvor/louvor (4).png" alt="Grudo de Louvor">
+            <h5>Grupo de Louvor</h5>
+            <a href="{{ url_for('louvor_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+        
+        <div class="album-card">
+            <img src="/static/images/construcoes/construcoes.jpg" alt="Construções">
+            <h5>Construções</h5>
+            <a href="{{ url_for('construcoes_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+        <div class="album-card">
+            <img src="/static/images/batismos/batismo (1).jpg" alt="Batismo">
+            <h5>Batismo</h5>
+            <a href="{{ url_for('batismos_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+        <div class="album-card">
+            <img src="/static/images/eventos/eventos (4).jpg" alt="Eventos">
+            <h5>Eventos</h5>
+            <a href="{{ url_for('eventos_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+    
+        <div class="album-card">
+            <img src="/static/images/ceia/ceia.png" alt="Ceia">
+            <h5>Santa Ceia</h5>
+            <a href="{{ url_for('ceia_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+                
+        <div class="album-card">
+            <img src="/static/images/missoes/missoes (1).jpg" alt="Missões">
+            <h5>Missões</h5>
+            <a href="{{ url_for('missoes_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+        <div class="album-card">
+            <img src="/static/images/dance/dança (19).jpg" alt="Dança">
+            <h5>Dança</h5>
+            <a href="{{ url_for('dance_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+        <div class="album-card">
+            <img src="/static/images/teatro/teatro (1).png" alt="Teatro">
+            <h5>Teatro</h5>
+            <a href="{{ url_for('teatro_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+        
+        <div class="album-card">
+            <img src="/static/images/membros/membros (1).jpg" alt="Membros">
+            <h5>Membros</h5>
+            <a href="{{ url_for('membros_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+    
+        
+        <div class="album-card">
+            <img src="/static/images/apresentacoes/apresentacoes (29).png" alt="Apresentações">
+            <h5>Apresentações</h5>
+            <a href="{{ url_for('apresentacoes_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+        
+        <div class="album-card">
+            <img src="/static/images/midias/midia (1).png" alt="Mídia">
+            <h5>Mídias</h5>
+            <a href="{{ url_for('midias_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+        
+        <div class="album-card">
+            <img src="/static/images/cultos/cultos (7).jpg" alt="Cultos">
+            <h5>Cultos</h5>
+            <a href="{{ url_for('cultos_album') }}" class="btn-more">Ver Mais</a>
+        </div>
+
+        <div class="album-card">
+            <!-- Botão para Redirecionar para Recordações -->
+            <div class="album-card">
+                <img src="/static/images/recordacoes/recordações (4).jpg" alt="Recordações">
+                <h5>Recordações</h5>
+                <a href="{{ url_for('recordacoes_album') }}" class="btn-more">Ver Mais</a>
+            </div>
+        </div>
+    
+
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="text-footer">&copy; 2025 - IEQ STA. CRUZ. | Todos os direitos reservados. <br> Endereço: Rua Ewaldo Fischer da Silva, 32 - Jardim Santa Cruz - São Mateus do Sul</p>
+            
+            <!-- Redes sociais -->
+            <div class="social-icons">
+                <a href="mailto:pastorarnaldorocha@gmail.com" target="_blank" alt="Gmail">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Gmail" width="32" />
+                </a>
+                <a href="https://pt-br.facebook.com/ieqsaomateusdosul/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook" width="32" />
+                </a>
+                <a href="https://www.instagram.com/segundaieqsms/" target="_blank">
+                    <img src="https://cdn-icons-png.freepik.com/256/15707/15707869.png" alt="Instagram" width="32" />       
+                </a>
+                <a href="https://www.youtube.com/@pastorarnaldorocha" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/1024px-YouTube_icon_%282013-2017%29.png" alt="YouTube" width="32" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>

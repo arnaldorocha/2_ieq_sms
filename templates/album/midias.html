@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias - Álbuns de Fotos e Vídeos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/maximized.css') }}">
+</head>
+
+<body>
+
+    <header class="header-bandeira">
+        <h1>IEQ STA. CRUZ</h1>
+        <a href="{{ url_for('home') }}">
+            <img src="https://seeklogo.com/images/I/igreja-do-evangelho-quadrangular-2-logo-55FEE849BD-seeklogo.com.png" 
+                 alt="Logo da Igreja do Evangelho Quadrangular" 
+                 class="bandeira-img mb-4">
+        </a>       
+        <div class="header-buttons">
+            <a href="/historia" class="btn btn-custom btn-purple" style="background-color: purple; color: white;">História</a>
+            <a href="/quem_somos" class="btn btn-custom btn-info">Quem Somos</a>
+            <a href="/lideres" class="btn btn-custom btn-warning">Líderes</a>
+            <a href="/albuns" class="btn btn-custom btn-danger">Álbuns</a>
+        </div>
+    </header>
+
+    <!-- Galeria de imagens -->
+    <div class="container album-preview">
+        {% for media in medias %}
+            {% if media.endswith('.mp4') or media.endswith('.avi') or media.endswith('.mov') or media.endswith('.mkv') %}
+                <!-- Vídeos são exibidos diretamente com um ícone de Play -->
+                <video class="media-item" width="320" height="240" controls onclick="openMedia('{{ media }}')">
+                    <source src="{{ media }}" type="video/mp4">
+                    Seu navegador não suporta o formato de vídeo.
+                </video>
+            {% else %}
+                <img src="{{ media }}" alt="Imagem do álbum" class="media-item" width="320" height="240" onclick="openMedia('{{ media }}')">
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- Modal -->
+    <div id="mediaModal" class="d-none">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <button id="closeButton" class="custom-close"  onclick="closeMedia()">X</button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" class="modal-img d-none" />
+                <video id="modalVideo" class="modal-video d-none" controls></video>
+            </div>
+            <div class="modal-footer">
+                <button onclick="prevMedia()">←</button>
+                <button onclick="nextMedia()">→</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="text-footer">&copy; 2025 - IEQ STA. CRUZ. | Todos os direitos reservados. <br> Endereço: Rua Ewaldo Fischer da Silva, 32 - Jardim Santa Cruz - São Mateus do Sul</p>
+            <div class="social-icons">
+                <a href="mailto:pastorarnaldorocha@gmail.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Gmail" width="32">
+                </a>
+                <a href="https://pt-br.facebook.com/ieqsaomateusdosul/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook" width="32">
+                </a>
+                <a href="https://www.instagram.com/segundaieqsms/" target="_blank">
+                    <img src="https://cdn-icons-png.freepik.com/256/15707/15707869.png" alt="Instagram" width="32">
+                </a>
+                <a href="https://www.youtube.com/@pastorarnaldorocha" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/1024px-YouTube_icon_%282013-2017%29.png" alt="YouTube" width="32">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="/static/js/image.js"></script>
+
+</body>
+</html>

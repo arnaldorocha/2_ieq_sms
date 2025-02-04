@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História - IEQ STA. CRUZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+
+  </head>
+
+<body>
+
+      <!-- Header específico para a página História -->
+    <header class="header-bandeira text-center py-5">
+        <h1 class = "title-font">ieq sta. cruz</h1>
+        <a href="{{ url_for('home') }}">
+            <img src="https://seeklogo.com/images/I/igreja-do-evangelho-quadrangular-2-logo-55FEE849BD-seeklogo.com.png" 
+                 alt="Logo da Igreja do Evangelho Quadrangular" 
+                 class="bandeira-img mb-4">
+        </a>       
+        
+        <!-- Botões no header -->
+        <div class="header-buttons">
+            <a href="/historia" class="btn btn-custom btn-purple"  style="background-color: purple; color: white;">História</a>
+            <a href="/quem_somos" class="btn btn-custom btn-info">Quem Somos</a>
+            <a href="/lideres" class="btn btn-custom btn-warning">Líderes</a>
+            <a href="/albuns" class="btn btn-custom btn-danger">Álbuns</a>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <div class="card card-custom">
+            <div class="card-body">
+                <p class="card-text">
+                    <strong>No Mundo:</strong> A Igreja do Evangelho Quadrangular foi fundada em 1º de janeiro de 1923 por Aimee Semple McPherson, 
+                    uma evangelista canadense, com a inauguração do Angelus Temple em Los Angeles, Califórnia. A denominação baseia-se em quatro 
+                    aspectos do ministério de Jesus Cristo: Salvador, Batizador com o Espírito Santo, Curador e Rei que há de vir. Atualmente, 
+                    a igreja está presente em mais de 150 países, com milhares de congregações ao redor do mundo.
+                </p>
+                <p class="card-text">
+                    <strong>No Brasil:</strong> A Igreja do Evangelho Quadrangular chegou ao Brasil em 1951, através dos missionários Harold Edwin Williams 
+                    e sua esposa, Mary Williams. Após passarem por diversos países da América do Sul, sentiram-se chamados a estabelecer a igreja no Brasil. 
+                    A primeira congregação foi fundada em 15 de novembro de 1951, na cidade de São João da Boa Vista, São Paulo. Desde então, a igreja tem 
+                    se expandido significativamente pelo país, contando atualmente com mais de 17.000 templos e obras em todos os estados brasileiros.
+                </p>
+                <p class="card-text">
+                    <strong>No Paraná:</strong> No estado do Paraná, a Igreja do Evangelho Quadrangular estabeleceu diversas congregações ao longo dos anos, 
+                    contribuindo para o crescimento do movimento pentecostal na região. A igreja tem desempenhado um papel ativo em comunidades locais, 
+                    oferecendo serviços religiosos, programas sociais e atividades comunitárias.
+                </p>
+                <p class="card-text">
+                    <strong>Em São Mateus do Sul:</strong> Especificamente no município de São Mateus do Sul, a Igreja do Evangelho Quadrangular possui uma presença ativa, 
+                    com congregações que atendem à comunidade local. A igreja oferece cultos regulares, estudos bíblicos e programas de apoio social, 
+                    buscando atender às necessidades espirituais e materiais da população.
+                </p>
+            </div>
+        </div>
+    </div>
+<br>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="text-footer">&copy; 2025 - IEQ STA. CRUZ. | Todos os direitos reservados. <br> Endereço: Rua Ewaldo Fischer da Silva, 32 - Jardim Santa Cruz - São Mateus do Sul</p>
+            
+            <!-- Redes sociais -->
+            <div class="social-icons">
+                <a href="mailto:pastorarnaldorocha@gmail.com" target="_blank" alt="Gmail">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Gmail" width="32" />
+                </a>
+                <a href="https://pt-br.facebook.com/ieqsaomateusdosul/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook" width="32" />
+                </a>
+                <a href="https://www.instagram.com/segundaieqsms/" target="_blank">
+                    <img src="https://cdn-icons-png.freepik.com/256/15707/15707869.png" alt="Instagram" width="32" />       
+                </a>
+                <a href="https://www.youtube.com/@pastorarnaldorocha" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/1024px-YouTube_icon_%282013-2017%29.png" alt="YouTube" width="32" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>

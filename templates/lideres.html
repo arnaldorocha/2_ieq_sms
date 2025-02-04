@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEQ STA. CRUZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header-bandeira text-center py-5">
+        <h1 class="title-font">IEQ STA. CRUZ</h1>
+        <a href="{{ url_for('home') }}">
+            <img src="https://seeklogo.com/images/I/igreja-do-evangelho-quadrangular-2-logo-55FEE849BD-seeklogo.com.png"
+                alt="Logo da Igreja do Evangelho Quadrangular" class="bandeira-img mb-4">
+        </a>
+
+        <!-- Botões de navegação -->
+        <div class="header-buttons">
+            <a href="/historia" class="btn btn-custom btn-purple"  style="background-color: purple; color: white;">História</a>
+            <a href="/quem_somos" class="btn btn-info">Quem Somos</a>
+            <a href="/lideres" class="btn btn-warning">Líderes</a>
+            <a href="/albuns" class="btn btn-danger">Álbuns</a>
+        </div>
+    </header>
+
+    <!-- Seção de Líderes -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <!-- Card do Pastor -->
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="background-color: yellow;">
+                    <img src="/static/images/lideres/pastores.png" class="card-img-top" alt="Pastor">
+                </div>
+            </div>
+
+            <!-- Card do Lori ao lado do Pastor -->
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="background-color: yellow;">
+                    <img src="/static/images/lideres/lori.png" class="card-img-top" alt="Líder Lori">
+                </div>
+            </div>
+        </div>
+
+        <!-- Outros Líderes -->
+        <div class="row">
+            <!-- Card de Líder 1 -->
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="background-color: yellow;">
+                    <img src="/static/images/lideres/camila.png" class="card-img-top" alt="Líder 1">
+                </div>
+            </div>
+
+            <!-- Card de Líder 2 -->
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="background-color: yellow;">
+                    <img src="/static/images/lideres/felipe.png" class="card-img-top" alt="Líder 2">
+                </div>
+            </div>
+
+            <!-- Card de Líder 3 -->
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="background-color: yellow;">
+                    <img src="/static/images/lideres/simone.png" class="card-img-top" alt="Líder 3">
+                </div>
+            </div>
+
+            <!-- Card de Líder 4 -->
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="background-color: yellow;">
+                    <img src="/static/images/lideres/grazi.png" class="card-img-top" alt="Líder 4">
+                </div>
+            </div>
+
+            <!-- Card de Líder 5 -->
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="background-color: yellow;">
+                    <img src="/static/images/lideres/didi.png" class="card-img-top" alt="Líder 5">
+                </div>
+            </div>
+
+            <!-- Card de Líder 6 -->
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="background-color: yellow;">
+                    <img src="/static/images/lideres/roseli.png" class="card-img-top" alt="Líder 6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="text-footer">&copy; 2025 - IEQ STA. CRUZ. | Todos os direitos reservados. <br> Endereço: Rua Ewaldo Fischer da Silva, 32 - Jardim Santa Cruz - São Mateus do Sul</p>
+            
+            <!-- Redes sociais -->
+            <div class="social-icons">
+                <a href="mailto:pastorarnaldorocha@gmail.com" target="_blank" alt="Gmail">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Gmail" width="32" />
+                </a>
+                <a href="https://pt-br.facebook.com/ieqsaomateusdosul/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook" width="32" />
+                </a>
+                <a href="https://www.instagram.com/segundaieqsms/" target="_blank">
+                    <img src="https://cdn-icons-png.freepik.com/256/15707/15707869.png" alt="Instagram" width="32" />       
+                </a>
+                <a href="https://www.youtube.com/@pastorarnaldorocha" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/1024px-YouTube_icon_%282013-2017%29.png" alt="YouTube" width="32" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/script.js"></script>
+    
+</body>
+
+</html>
