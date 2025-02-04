@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, url_for
 
-app = Flask(__name__, static_folder='static')
+app = Flask(__name__, static_url_path='/static', static_folder='static')
 
 PHOTO_DIR = "static/images"  # Caminho base das imagens
 VIDEO_DIR = "static/videos"  # Caminho base dos vídeos
